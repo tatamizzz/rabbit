@@ -1,0 +1,371 @@
+.menu-header{
+    /*border-bottom: 2px solid #cccccc;*/
+    padding: 30px 0 15px;
+}
+.menu-customerName{
+    /*margin-left: 10px;*/
+    /*display: inline-block;*/
+    line-height: 40px;
+    vertical-align: top;
+    text-align: center;
+    color:#ffffff;
+}
+body.menu-body{
+    background:#808080;
+    color:#c9c9c9;
+    font-size: 16px;
+    padding:0 5px;
+}
+.menu-list{
+    margin: 10px 40px 0 40px;
+}
+.menu-list li{
+    border-top: 1px solid #a0a2a2;
+    /*margin-bottom: 30px;*/
+    padding:15px 0;
+}
+.menu-list li a{
+    color:#ffffff;
+    font-size: 1.1rem;
+}
+.messageNum_menu{
+    color:#13bfa2;
+    margin-left: 10px;
+}
+
+/*index*/
+.index-sec1,.detail-sec1{
+    margin-top: 50px;
+}
+.index-sec1-imgContainer,.index-sec2-imgContainer{
+    position: relative;
+    font-size: 0;
+    margin-bottom: 1px;
+}
+.index-sec1-imgContainer img,.index-sec2-imgContainer img{
+    width:100%
+}
+.index-sec1-imgContainer-desc{
+    font-size: 32px;
+    color:#ffffff;
+    text-align: center;
+    height: 80px;
+    margin:auto;
+    position: absolute;
+    top:0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    font-weight: bold;
+}
+.index-sec1-imgContainer-subDesc{
+    font-size: 18px;
+    margin-top: 20px;
+    font-weight: normal;
+}
+.index-sec2-imgContainer-desc{
+    height: 60px;
+    padding:10px;
+    color:#333333;
+    position: relative;
+    font-size:14px;
+    line-height: 1.5;
+}
+.customerPhoto{
+    position: absolute;
+    right: 10px;
+    top:-20px;
+}
+.priceContainer{
+    position: absolute;
+    top: 90px;
+    left: 0;
+    background: rgba(0,0,0,0.6);
+    color: #dddddd;
+    height: 35px;
+    width: 70px;
+    font-size: 20px;
+    line-height: 35px;
+    padding:0 5px;
+}
+.index-header,.detail-header,.detail-footer{
+    position: fixed;
+    height: 40px;
+    text-align: center;
+    color: #333333;
+    line-height: 40px;
+    width: 100%;
+    background: #ffffff;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    font-size: 16px;
+    border-bottom: 1px solid #cccccc;
+}
+
+/*detail*/
+.detail-header{
+    text-align: left;
+    text-indent: 10px;
+}
+.detail-sec1{
+    padding:0 10px;
+    margin-bottom: 55px;
+}
+.source{
+    line-height: 45px;
+    margin-bottom: 10px;
+}
+.source .area{
+    float:right;
+}
+.contentImgs{
+    width:246px;
+    margin:0 auto;
+}
+.contentImgs li{
+    margin:0 2px 2px 0;
+    float: left;
+    font-size: 0;
+}
+.contentIntroduction{
+    padding-top: 10px;
+    clear: both;
+    line-height: 1.2;
+}
+.storeInfoContainer{
+    display: none;
+}
+.storeInfoButton{
+    width:90px;
+    height:90px;
+    border-radius: 45px;
+    line-height: 90px;
+    text-align: center;
+    border:2px solid #cccccc;
+    margin:20px auto;
+    cursor: pointer;
+}
+.importantTag{
+    background: #333333;
+    border:1px solid #000000;
+    color:#cccccc;
+    font-size: 12px;
+    padding:5px;
+    display: inline-block;
+}
+.collectionContainer{
+    text-align: center;
+    margin-bottom: 10px;
+}
+.collectionNum{
+    position: relative;
+    top: -30px;
+    border:1px solid #cccccc;
+    padding:5px;
+}
+.commentContainer-header{
+    margin-bottom: 10px;
+    clear: both;
+}
+.commentUser li{
+    margin: 0 5px 5px 0;
+    float: left;
+}
+.detail-footer{
+    top:auto;
+    bottom: 0;
+    border:1px solid #cccccc;
+}
+
+/*requirement*/
+.ipt_req{
+    width:80px;
+    border:0;
+    border-bottom: 1px solid #cccccc;
+}
+
+/*inbox*/
+.messagesList{
+    margin-top: 10px;
+}
+.messagesList>li{
+    margin-bottom: 10px;
+    border-bottom: 1px solid #cccccc;
+    padding:10px 5px;
+    position: relative;
+}
+.messagesList .userPic{
+    float: left;
+}
+.messagesList ol{
+    margin-left: 80px;
+    list-style: none;
+}
+.messagesList ol li{
+    margin-bottom: 3px;
+    color:#999999;
+}
+.messagesList .userName{
+    font-weight: bold;
+}
+.messagesList .messageSearch a{
+    color: #eebf09;
+}
+.messagesList .send_timeSpan{
+    position: absolute;
+    top:10px;
+    right: 5px;
+    color:#cccccc;
+    font-size: 12px;
+}
+
+/*req*/
+.req_nav{
+    height: 40px;
+    background: #666666;
+    margin-top: 51px;
+    padding: 15px 10px;
+    width: 300px;
+    position: relative;
+    color:#cccccc;
+}
+.navIcon{
+    position: absolute;
+    top:10px;
+    right: 10px;
+}
+.navIcon li{
+    float: left;
+    margin-right: 10px;
+}
+.navIcon_button{
+    background: url("../images/icons2.png");
+    width:46px;
+    height:46px;
+    border-radius: 23px;
+    border:2px solid #cccccc;
+}
+.req_confirm{
+    background-position: -433px -380px;
+}
+.daren{
+    background-position: -42px -211px;
+}
+.consultation{
+    background-position: -98px -770px;
+}
+.navIcon_button.current{
+    background-color:#ffffff;
+    background-image: url("../images/icons3.png");
+}
+.message_u1 .message_content1{
+    width:70%;
+    border-bottom:1px solid #172d31;
+    padding: 10px;
+    border-radius: 10px;
+    background: #cccccc;
+    float: right;
+    margin-right: 5px;
+}
+.message_u1 .message_touxiang{
+    float: right;
+}
+.message_u2 .message_content1{
+    width:70%;
+    /*border-bottom:1px solid #172d31;*/
+    padding: 10px;
+    border-radius: 10px;
+    background: #ffffff;
+    float: left;
+    margin-left: 5px;
+}
+.message_u2 .message_touxiang{
+    float: left;
+}
+.consultation-sec1{
+    background: #f4f4f4;
+    top: 120px;
+    bottom: 50px;
+    left:0;
+    position: absolute;
+    width:100%;
+}
+.consultation-sec1 li{
+    margin-bottom: 15px;
+}
+.consultationMessageList{
+    margin:15px 10px;
+}
+.send_timeSpan{
+    font-size: 12px;
+    color:#6d6d6d;
+    margin-top: 10px;
+    display: block;
+}
+.ipt_message{
+    height: 90%;
+    width:80%;
+    border: 0;
+    font-size:18px;
+    outline: none;
+}
+
+/*menu*/
+.photo_menu{
+    display: block;
+    margin:0 auto;
+
+}
+
+/*register*/
+.registerContainer{
+    width:80%;
+    height: 210px;
+    position: absolute;
+    top:40px;
+    bottom: 10px;
+    left:0;
+    right: 0;
+    margin:auto;
+}
+.registerContainer li{
+    margin-bottom: 8px;
+}
+.notice_termOfService_Container{
+    text-align: center;
+    margin-bottom: 10px;
+    color:#999999;
+}
+.link_termOfService{
+    color:#13bfa2;
+}
+
+
+.loginBody{
+    background:url("../images/loginBG.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+.loginContainer{
+    width:70%;
+    margin: 40px auto 0;
+}
+.loginPanel li{
+    margin-bottom: 10px;
+}
+.coagentContainer{
+    text-align: center;
+    margin-top: 20px;
+}
+.coagentContainer a{
+    /*display: inline-block;*/
+    /*width:50%;*/
+    /*text-align: center;*/
+    margin:0 20px;
+}
+.link_forgetPWD{
+    font-size: 12px;
+    color:#ffffff;
+    float: right;
+    margin-bottom: 8px;
+}
