@@ -35,12 +35,12 @@ body.menu-body{
 
 /*index*/
 .index-sec1,.detail-sec1{
-    margin-top: 50px;
+    margin-top: 40px;
 }
 .index-sec1-imgContainer,.index-sec2-imgContainer{
     position: relative;
     font-size: 0;
-    margin-bottom: 1px;
+    /*margin-bottom: 1px;*/
 }
 .index-sec1-imgContainer img,.index-sec2-imgContainer img{
     width:100%
@@ -56,7 +56,7 @@ body.menu-body{
     right: 0;
     bottom: 0;
     left: 0;
-    font-weight: bold;
+    /*font-weight: bold;*/
 }
 .index-sec1-imgContainer-subDesc{
     font-size: 18px;
@@ -176,6 +176,26 @@ body.menu-body{
     top:auto;
     bottom: 0;
     border:1px solid #cccccc;
+}
+.sightSpotTitle{
+    position: absolute;
+    left: 13px;
+    bottom: 4px;
+    height: 30px;
+    width: 100%;
+    font-size: 23px;
+    color: #ffffff;
+}
+.favoriteIco{
+    position: absolute;
+    width: 23px;
+    height: 22px;
+    background: url("../images/favoriteIco.png") 0 0 no-repeat;
+    top: 10px;
+    right: 10px;
+}
+.favoriteIco.choosen{
+    background-position: 0 -23px;
 }
 
 /*requirement*/

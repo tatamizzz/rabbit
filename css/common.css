@@ -2,7 +2,7 @@ html{
     height:100%;
 }
 body{
-    font-family: "Helvetica Neue",Helvetica,Arial,"Hiragino Sans GB","华文细黑","STHeiti","微软雅黑","Microsoft YaHei",SimHei,sans-serif !important;
+    /*font-family: "Helvetica Neue",Helvetica,Arial,"Hiragino Sans GB","华文细黑","STHeiti","微软雅黑","Microsoft YaHei",SimHei,sans-serif !important;*/
     background: #f2f2f2;
 }
 .photo-round{
