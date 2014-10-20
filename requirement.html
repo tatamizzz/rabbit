@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi" />
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/common.css"/>
+    <link rel="stylesheet" href="css/page.css"/>
+</head>
+<body>
+<header class="detail-header">
+    <a class="menuButton" href="menu.html"></a>
+    软乎乎的肉球面包
+    <a class="noticeButto" href="#"></a>
+</header>
+<section class="detail-sec1">
+    <h1 style="padding-top:10px;">需求填写</h1>
+    <table class="tbl_common" style="margin-top: 10px;">
+        <colgroup>
+            <col width="80"/>
+        </colgroup>
+        <tr>
+            <td>目的：</td>
+            <td><select name="" id=""><option value="0">地接</option></select></td>
+        </tr>
+        <tr>
+            <td>时间：</td>
+            <td><input type="text" name="" id="" class="ipt_req"/></td>
+        </tr>
+        <tr>
+            <td>出发地：</td>
+            <td><input type="text" name="" id="" class="ipt_req"/></td>
+        </tr>
+        <tr>
+            <td>预算：</td>
+            <td><input type="text" name="" id="" class="ipt_req"/> 至 <input type="text" name="" id="" class="ipt_req"/></td>
+        </tr>
+    </table>
+</section>
+<footer class="detail-footer">
+    <a href="#" style="display: block;">预约</a>
+</footer>
+<script src="scripts/zepto.js"></script>
+<script>
+    $(".storeInfoButton").click(function(){
+        $(".storeInfoContainer").show();
+    })
+</script>
+</body>
+</html>

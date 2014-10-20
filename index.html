@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi" />
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/common.css"/>
+    <link rel="stylesheet" href="css/page.css"/>
+</head>
+<body>
+<div class="main">
+    <header class="index-header">
+        <a class="menuButton" href="menu.html"></a>
+        精选11
+        <a class="searchButton" href="#"></a>
+    </header>
+    <div id="wrapper" class="mainBody">
+        <div id="scroller">
+            <div class="index-sec1">
+                <div class="index-sec1-imgContainer">
+                    <img src="images/index_02.jpg" alt="" style="width:100%"/>
+                    <div class="index-sec1-imgContainer-desc">东京<div class="index-sec1-imgContainer-subDesc">你不得不去</div></div>
+                </div>
+            </div>
+            <div class="index-sec2">
+                <div class="index-sec2-imgContainer">
+                    <img src="images/54611948_02.jpg" alt=""/>
+                    <div class="sightSpotTitle">多彩民宿</div>
+                    <i class="favoriteIco"></i>
+                </div>
+                <div class="index-sec2-imgContainer">
+                    <img src="images/54611948_03.jpg" alt=""/>
+                    <div class="sightSpotTitle">邻居家的豆豆龙</div>
+                    <i class="favoriteIco choosen"></i>
+                </div>
+            </div>
+            <div class="index-sec1" style="margin-top: 0;">
+                <div class="index-sec1-imgContainer">
+                <img src="images/index_05.jpg" alt="" style="width:100%"/>
+                    <div class="index-sec1-imgContainer-desc">温泉之旅</div>
+                </div>
+            </div>
+            <div class="index-sec2">
+                <div class="index-sec2-imgContainer">
+                    <img src="images/54611948_05.jpg" alt=""/>
+                    <div class="sightSpotTitle">赏樱好时节</div>
+                    <i class="favoriteIco"></i>
+                </div>
+                <div class="index-sec2-imgContainer">
+                    <img src="images/54611948_07.jpg" alt="" style="width:100%"/>
+                    <div class="sightSpotTitle">花·花花</div>
+                    <i class="favoriteIco choosen"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="scripts/zepto.js"></script>
+<script src="scripts/zepto_touch.js"></script>
+<script src="scripts/zepto_fx.js"></script>
+<script src="scripts/includeMenu.js"></script>
+<script src="scripts/iscroll-lite.js"></script>
+<script src="scripts/imagesloaded.pkgd.min.js"></script>
+<script>
+    $(function(){
+        $(".main").swipeRight(function(){
+            if($("body").hasClass("showMenu"))
+            {
+                return false;
+            }
+            else{
+                $("body").addClass("showMenu");
+            }
+//            $(".mainBody").animate({"left":"90%"},50);
+        })
+                .tap(function(){
+                    if($("body").hasClass("showMenu"))
+                        $("body").removeClass("showMenu");
+                    return false;
+        })
+
+//        $(".main").swipeRight(function(){
+//            alert("zzz");
+//        })
+        imagesLoaded(".main",function(){myScroll.refresh();})
+
+
+    })
+    var myScroll;
+
+    myScroll = new IScroll('#wrapper',{bounce:false});
+
+//    document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
+</script>
+</body>
+</html>
