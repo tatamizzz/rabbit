@@ -1,6 +1,7 @@
 .menu-header{
     /*border-bottom: 2px solid #cccccc;*/
     padding: 30px 0 15px;
+    position:static !important;
 }
 .menu-customerName{
     /*margin-left: 10px;*/
@@ -34,7 +35,7 @@ body.menu-body{
 }
 
 /*index*/
-.index-sec1,.detail-sec1{
+.detail-sec1{
     margin-top: 40px;
 }
 .index-sec1-imgContainer,.index-sec2-imgContainer{
