@@ -11,8 +11,8 @@
 <body>
 <div class="main">
     <header class="index-header">
-        <a class="menuButton" href="menu.html"></a>
-        精选11
+        <a class="menuButton" href="#"></a>
+        今日精选
         <a class="searchButton" href="#"></a>
     </header>
     <div id="wrapper" class="mainBody">
@@ -41,6 +41,32 @@
                     <div class="index-sec1-imgContainer-desc">温泉之旅</div>
                 </div>
             </div>
+            <div class="hotTalentContainer">
+                <div class="title">热门达人</div>
+                <ul>
+                    <li>
+                        <div class="photo-round small-photo photo_menu"><img src="res/original.jpg" alt=""/></div>
+                    </li>
+                    <li>
+                        <div class="photo-round small-photo photo_menu"><img src="res/original.jpg" alt=""/></div>
+                    </li>
+                    <li>
+                        <div class="photo-round small-photo photo_menu"><img src="res/original.jpg" alt=""/></div>
+                    </li>
+                    <li>
+                        <div class="photo-round small-photo photo_menu"><img src="res/original.jpg" alt=""/></div>
+                    </li>
+                    <li>
+                        <div class="photo-round small-photo photo_menu"><img src="res/original.jpg" alt=""/></div>
+                    </li>
+                    <li>
+                        <div class="photo-round small-photo photo_menu"><img src="res/original.jpg" alt=""/></div>
+                    </li>
+                    <li>
+                        <div class="photo-round small-photo photo_menu"><img src="res/original.jpg" alt=""/></div>
+                    </li>
+                </ul>
+            </div>
             <div class="index-sec2">
                 <div class="index-sec2-imgContainer">
                     <img src="images/54611948_05.jpg" alt=""/>
@@ -64,20 +90,14 @@
 <script src="scripts/imagesloaded.pkgd.min.js"></script>
 <script>
     $(function(){
-        $(".main").swipeRight(function(){
-            if($("body").hasClass("showMenu"))
-            {
-                return false;
-            }
-            else{
-                $("body").addClass("showMenu");
-            }
-//            $(".mainBody").animate({"left":"90%"},50);
-        })
-                .tap(function(){
+        $(".main").tap(function(){
                     if($("body").hasClass("showMenu"))
                         $("body").removeClass("showMenu");
                     return false;
+        })
+        $(".menuButton").tap(function(){
+            $("body").addClass("showMenu");
+            return false;
         })
 
 //        $(".main").swipeRight(function(){

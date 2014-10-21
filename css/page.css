@@ -103,6 +103,27 @@ body.menu-body{
     font-size: 16px;
     border-bottom: 1px solid #cccccc;
 }
+.hotTalentContainer{
+    background:#ffffff;
+    padding:10px 0;
+    height: 100px;
+    overflow: hidden;
+}
+.hotTalentContainer .title{
+    text-align: center;
+    border-bottom: 1px solid #e6e6e6;
+    color:#666666;
+    font-size: 16px;
+    padding:5px 0;
+}
+.hotTalentContainer ul{
+    margin: 10px 0 0 10%;
+    width:800px;
+}
+.hotTalentContainer li{
+    float:left;
+    margin-right: 10px;
+}
 
 /*detail*/
 .detail-header{

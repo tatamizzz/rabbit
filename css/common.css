@@ -31,20 +31,20 @@ sup{
     text-rendering: optimizeLegibility;
 }
 .menuButton{
-    background: url("../images/icons1.png") -247px -242px no-repeat;
-    width: 32px;
-    height: 27px;
+    background: url("../images/menuIco.png")no-repeat;
+    width: 17px;
+    height: 14px;
     display: inline-block;
     float: left;
-    margin: 11px 0 0 5px;
+    margin-top: 11px;
 }
 .searchButton{
-    background: url("../images/icons1.png") -127px -477px no-repeat;
-    width: 33px;
-    height: 34px;
+    background: url("../images/searchIco.png") no-repeat;
+    width: 20px;
+    height: 21px;
     display: inline-block;
     float: right;
-    margin: 8px 5px 0 0;
+    margin: 8px 10px 0 0;
 }
 .noticeButto{
     background: url("../images/icons1.png") -6px -299px no-repeat;
