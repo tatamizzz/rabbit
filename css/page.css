@@ -36,7 +36,7 @@ body.menu-body{
 
 /*index*/
 .detail-sec1{
-    margin-top: 40px;
+    /*margin-top: 40px;*/
 }
 .index-sec1-imgContainer,.index-sec2-imgContainer{
     position: relative;
@@ -127,23 +127,47 @@ body.menu-body{
 
 /*detail*/
 .detail-header{
+    padding:10px 15px;
+    background: transparent;
+    border:0;
     text-align: left;
-    text-indent: 10px;
+    line-height: 1.5em;
+    vertical-align: middle;
+    color: #ffffff;
+    box-sizing: border-box;
+}
+.detail-header a{
+    color:#ffffff;
+    font-size: 1.5em;
+    vertical-align: middle;
 }
 .detail-sec1{
-    padding:0 10px;
+    /*padding:0 10px;*/
     margin-bottom: 55px;
+    background: url("../images/detailBG_02.jpg");
 }
 .source{
-    line-height: 45px;
-    margin-bottom: 10px;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    width: 100%;
+    color: #ffffff;
 }
-.source .area{
-    float:right;
+.sourceAuthorPic{
+    margin-right: 10px;
+}
+.sourceAuthorName{
+    border-left: 4px solid #00a0e9;
+    padding-left: 4px;
+    margin: 4px 0;
+    display: inline-block;
+}
+.sourceFrom{
+    padding-left: 8px;
+    font-size: 0.875em;
 }
 .contentImgs{
-    width:246px;
-    margin:0 auto;
+    position: relative;
 }
 .contentImgs li{
     margin:0 2px 2px 0;
@@ -151,22 +175,139 @@ body.menu-body{
     font-size: 0;
 }
 .contentIntroduction{
-    padding-top: 10px;
+    margin:3px 10px;
     clear: both;
     line-height: 1.2;
 }
-.storeInfoContainer{
-    display: none;
+.contentIntroduction .contentTopBG{
+    background: url("../images/detailContentTopBG.png") left top no-repeat;
+    height: 14px;
 }
-.storeInfoButton{
-    width:90px;
-    height:90px;
-    border-radius: 45px;
-    line-height: 90px;
+.contentIntroduction .contentBottomBG{
+    background: url("../images/detailContentBottomBG.png") left bottom no-repeat;
+    height: 11px;
+}
+.contentIntroduction .content{
+    background: #ffffff;
+    line-height: 1.5;
+    color:#5c5c5c;
+    padding:0 15px;
+}
+.contentIntroduction .contentTitle{
+    color:#448aca;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+.contentOtherInfoContainer{
+    border-top: 1px solid #e5e5e5;
+    color:#dcdcdc;
+    background: #ffffff;
+    text-align: right;
+    padding:10px 20px 0;
+    box-sizing: border-box;
+}
+.storeInfoContainer{
+    margin-top: 10px;
+}
+.storeImg{
+    position: relative;
+}
+.storeBasicInfoOnImg{
+    position: absolute;
+    left: 15px;
+    bottom: 50%;
+    margin-bottom: -20px;
+    color: #ffffff;
+}
+.storeBasicInfoOnImg .storeName{
+    font-size: 1em;
+    margin-bottom: 5px;
+}
+.storeBasicInfoOnImg .storeHotContainer{
+    font-size: 0.75em;
+}
+.storePrice{
+    background: url("../images/storePriceTagBG.png") no-repeat;
+    position: absolute;
+    left: 0;
+    bottom: 20px;
+    height: 18px;
+    width: 60px;
+    line-height: 18px;
+    padding-left: 3px;
+    font-size: 0.8em;
+    color:#ffffff;
+}
+.storeBasicInfoContainer{
+    padding:0 10px;
+}
+.storeBasicInfoContainer .icon{
+    color:#556270;
+    font-size: 1.4em;
+    vertical-align:middle;
+}
+.businessTime .icon{
+    /*font-size: 1.1em;*/
+}
+.cellPhoneExtraInfo{
+    color:#b91717;
+    float: right;
+}
+.storeBasicInfoContainer .panel{
+    background: #ffffff;
+    margin-bottom: 10px;
+}
+.storeBasicInfoContainer .panel>div{
+    padding:5px;
+}
+.storeBasicInfoContainer .separatorV{
+    border-left: 1px solid #e5e5e5;
+    margin-left: 3px;
+    padding-right: 3px;
+}
+.storeAddress,.businessTime,.cellPhone{
+    color:#4399ca;
+    font-size: 0.75em;
+}
+.businessTime{
+    border-bottom: 1px solid #f6f6f6;
+}
+.businessTimeExtraInfo{
+    float:right;
+    color:#939393;
+}
+.features.panel{
+    padding-top: 5px;
+}
+.features.panel ul{
+    display: -webkit-box;
+}
+.features.panel li{
+    -webkit-box-flex:1.0;
+    margin-bottom: 5px;
+    color:#556270;
+    font-size: 0.875em;
     text-align: center;
-    border:2px solid #cccccc;
-    margin:20px auto;
-    cursor: pointer;
+}
+.features.panel li i{
+    display: block;
+    height: 45px;
+    border-right: 3px solid #eeeeee;
+}
+.features.panel li:last-of-type i{
+    border:0;
+}
+.features .specialService{
+    background: url("../images/specialServiceIco.png") center no-repeat;
+}
+.features .traffic{
+    background: url("../images/trafficIco.png") center no-repeat;
+}
+.features .infrastructure{
+    background: url("../images/infrastructureIco.png") center no-repeat;
+}
+.features .ChineseService{
+    background: url("../images/chineseServiceIco.png") center no-repeat;
 }
 .importantTag{
     background: #333333;
@@ -198,6 +339,10 @@ body.menu-body{
     top:auto;
     bottom: 0;
     border:1px solid #cccccc;
+    background:#448aca;
+}
+.detail-footer a{
+    color: #ffffff;
 }
 .sightSpotTitle{
     position: absolute;
