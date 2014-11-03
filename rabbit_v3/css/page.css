@@ -1,0 +1,27 @@
+/**********content*************/
+.contentNav ul{
+    display: -webkit-box;
+    display: -moz-box;
+}
+.contentNav ul li{
+    -webkit-box-flex:1;
+    -moz-box-flex:1;
+    text-align: center;
+    height: 58px;
+    line-height: 58px;
+    border-bottom: 2px solid #ffffff;
+    background: #ffffff;
+}
+.contentNav ul li.current{
+    background: #f7f7f7;
+    border-bottom-color: #2bb4d6;
+}
+.contentSuggestInfoContainer{
+    padding:17px 17px 0;
+    background: #eeeeee;
+}
+.contentSuggestInfoPanel{
+    background: url("../images/contentSuggestInfoBG.jpg") no-repeat #fdfdfd;
+
+}
+/**********content*************/
