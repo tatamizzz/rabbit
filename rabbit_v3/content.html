@@ -5,7 +5,7 @@
     <title></title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi">
     <link rel="stylesheet" href="css/reset.css"/>
-
+    <link rel="stylesheet" href="css/common.css"/>
     <link rel="stylesheet" href="css/page.css"/>
 </head>
 <body>
@@ -20,16 +20,96 @@
             <li>交通</li>
         </ul>
     </nav>
-    <div class="contentSuggestInfoContainer">
+    <div class="contentTab contentSuggestInfoContainer hide">
         <div class="contentSuggestInfoPanel">
             <ul class="authorInfo">
-                <li class="headPic"></li>
+                <li class="headPic"><img src="images/touxiang.jpg" alt=""/></li>
                 <li class="nickName">喵喵安</li>
-                <li class="title">微博达人</li>
+                <li class="title"><span>微博达人</span></li>
             </ul>
-            
+            <article>
+                <h3>“不吃就错过了”</h3>
+                <p>
+                    却会让你希望一直留在那里的地却会让你希望一直留在那里的地却会让你希望一直留在那里的地却会让你希望一直留在那里的地却会让你希望一直留在那里的地却会让你希望一直留在那里的地却会让你希望一直留在那里的地却会那里的地却会让你希望一直留在那里的地却会那里的地却会
+                </p>
+            </article>
+            <div class="contentImgs">
+                <div><img src="images/A01-home_03.jpg" alt=""/></div>
+                <div><img src="images/A01-home_03.jpg" alt=""/></div>
+                <div><img src="images/A01-home_03.jpg" alt=""/></div>
+            </div>
+            <div class="contentOtherInfo">
+                <i class="favorite">853</i>
+                <i class="comment">53</i>
+            </div>
         </div>
     </div>
+    <div class="contentTab informationContainer hide">
+        <div class="informationPanel">
+            <ul class="storeInfo">
+                <li>
+                    <div style="width:75px;"><i class="location">地址</i></div>
+                    <div style="-webkit-box-flex:1">东京都小金井市1丁目4番25号</div>
+                </li>
+                <li>
+                    <div style="width:75px;"><i class="time">营业时间</i></div>
+                    <div style="-webkit-box-flex:1">09:00-21:30</div>
+                    <div style="-webkit-box-flex:1" class="sideInfo">最晚入店21：00</div>
+                </li>
+                <li>
+                    <div style="width:75px;"><i class="callNum">电话</i></div>
+                    <div style="-webkit-box-flex:1">011-1234 5678</div>
+                    <div style="-webkit-box-flex:1" class="sideInfo">完全预约制</div>
+                </li>
+                <li>
+                    <div style="width:75px;"><i class="tag">标签</i></div>
+                    <div style="-webkit-box-flex:1">秋叶原&nbsp;&nbsp;&nbsp;&nbsp;日式简餐</div>
+                </li>
+            </ul>
+        </div>
+        <div class="informationPanel">
+            <div class="title">
+                <i class="amenities">便利设施</i>
+                <a class="link_more floatR" href="#">更多...</a>
+            </div>
+
+        </div>
+        <div class="informationPanel">
+            <div class="title">
+                <i class="netFriendComment">网友评论</i>
+                <a class="link_more floatR" href="#">更多...</a>
+            </div>
+            <ul class="netFriendCommentList">
+                <li>
+                    <img src="images/touxiang.jpg" alt="" class="userHeadPic smallPic"/>
+                    <div class="nickName">天是屁蓝</div>
+                    <div class="commentContent">
+                        我要吃三文鱼我要吃三文鱼我要吃三文鱼我要吃三文鱼我要吃三文鱼我要吃三文鱼我要吃三文鱼我要吃三文鱼我要吃三文鱼我要吃三文鱼我要吃三文鱼
+                    </div>
+                </li>
+                <li>
+                    <img src="images/touxiang.jpg" alt="" class="userHeadPic smallPic"/>
+                    <div class="nickName">天是屁蓝</div>
+                    <div class="commentContent">
+                        我要吃三文鱼我要吃三文鱼我要吃三文鱼我要吃三文鱼我要吃三文鱼我要吃三文鱼我要吃三文鱼我要吃三文鱼我要吃三文鱼我要吃三文鱼我要吃三文鱼
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="contentTab trafficInfoContainer hide">
+        <img src="images/A02-content(2)_02.jpg" alt="" style="width: 100%;height:100%"/>
+    </div>
 </section>
+<script src="scripts/zepto.js"></script>
+<script>
+    $(".contentNav li").click(function(){
+        var i=$(this).index();
+        $(".contentNav li").removeClass("current");
+        $(this).addClass("current");
+        $(".contentTab").hide().eq(i).show();
+    })
+    $(".contentNav li").first().trigger("click");
+</script>
 </body>
 </html>
